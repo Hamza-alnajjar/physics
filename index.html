@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مختبر الفيزياء - الحركة التوافقية البسيطة</title>
+    <style>
+        :root {
+            --primary-color: #00adb5;
+            --secondary-color: #393e46;
+            --dark-bg: #222831;
+            --light-text: #eeeeee;
+            --accent-color: #ff2e63;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: var(--light-text);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: var(--secondary-color);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 15px;
+        }
+
+        header h1 {
+            color: var(--primary-color);
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+            border-right: 5px solid var(--accent-color);
+            padding-right: 10px;
+        }
+
+        .video-section {
+            text-align: center;
+            background: rgba(0,0,0,0.3);
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        video {
+            width: 100%;
+            max-width: 700px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+        }
+
+        /* قسم تضمين تجربة PhET */
+        .phet-section {
+            background: #1a1f29;
+            padding: 25px;
+            border-radius: 12px;
+            border: 2px solid var(--primary-color);
+            text-align: center;
+        }
+
+        .phet-frame-container {
+            width: 100%;
+            height: 650px; /* طول مناسب لعرض التجربة بالكامل */
+            margin-top: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+            background: #000;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>شرح الحركة التوافقية البسيطة</h1>
+            <p>شاهد العرض المرئي، ثم انتقل لتطبيق التجربة التفاعلية بنفسك بالأسفل</p>
+        </header>
+
+        <div class="main-content">
+            <section class="video-section">
+                <h2 class="section-title">أولاً: العرض المرئي</h2>
+                <video controls>
+    <source src="https://drive.google.com/file/d/1C2B7MIc3UxtfnNJXzTw7bU991n-BqR1g/view?usp=sharing" type="video/mp4">
+             </video>
+            </section>
+
+            <section class="phet-section">
+                <h2 class="section-title">ثانياً: المختبر التفاعلي (PhET Simulation)</h2>
+                <p style="text-align: right; color: #ccc; margin-bottom: 10px;">💡 يمكنك الآن التحكم في الكتل، النوابض، الزوايا، والسرعة مباشرة من خلال المختبر المدمج أدناه:</p>
+                
+                <div class="phet-frame-container">
+                    <iframe src="phet-simulation.html" title="PhET Simulation"></iframe>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p>مختبر فيزيائي محلي متكامل يعمل بالكامل دون إنترنت - مدمج مع تجارب PhET العالمية</p>
+        </footer>
+    </div>
+
+</body>
+</html>
