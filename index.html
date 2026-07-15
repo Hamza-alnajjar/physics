@@ -124,7 +124,31 @@
         <div class="main-content">
             <section class="video-section">
                 <h2 class="section-title">أولاً: العرض المرئي</h2>
-                <iframe src="https://drive.google.com/file/d/1C2B7MIc3UxtfnNJXzTw7bU991n-BqR1g/preview" width="100%" height="450" allow="autoplay" style="border: none; border-radius: 8px;"></iframe>
+                <style>
+    /* كود سحري لضبط أبعاد فيديو جوجل درايف بالكامل على الجوال والكمبيوتر */
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* نسبة أبعاد الفيديو القياسية 16:9 */
+        height: 0;
+        overflow: hidden;
+        border-radius: 12px; /* حواف دائرية أنيقة */
+        box-shadow: 0 4px 15px rgba(0,0,0,0.15); /* ظل خفيف */
+        margin-bottom: 25px;
+    }
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+</style>
+
+<div class="video-container">
+    <!-- تأكد من وضع معرف الفيديو الخاص بك في الرابط بالأسفل -->
+    <iframe src="https://drive.google.com/file/d/اكتب_معرّف_الفيديو_الخاص_بك_هنا/preview" allow="autoplay" allowfullscreen></iframe>
+</div>
             </section>
 
             <section class="phet-section">
